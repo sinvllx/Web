@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <link rel="stylesheet" href="css/dashboard.css">
+  <title>Dashboard | To-Do List</title>
+</head>
+<body>
+  
+  <header class="dashboard-header">
+    <h1>Welcome, Sabina!</h1>
+    <p>Here’s your task overview for today 🌸</p>
+  </header>
+
+  <nav class="dashboard-navbar">
+    <div class="logo">My Tasks</div>
+    <ul class="dashboard-nav-links">
+      <li><a href="dashboard.html" class="active">Dashboard</a></li>
+      <li><a href="mytasks.html">My Tasks</a></li>
+      <li><a href="archive.html">Archive</a></li>
+      <li><a href="index.html" class="logout">Homepage</a></li>
+    </ul>
+  </nav>
+  
+  <!-- Секция со статистикой -->
+  <section class="stats">
+    <div class="card pink">
+      <h3>Total Tasks</h3>
+      <p id="total-tasks-count">0</p>
+    </div>
+    <div class="card green">
+      <h3>Completed</h3>
+      <p id="completed-tasks-count">0</p>
+    </div>
+    <div class="card yellow">
+      <h3>In Progress</h3>
+      <p id="inprogress-tasks-count">0</p>
+    </div>
+  </section>
+
+  <!-- Секция фильтров и кнопка перехода на MyTasks -->
+  <section class="filters">
+    <select id="category-filter">
+      <option value="all">All Categories</option>
+      <option value="work">Work</option>
+      <option value="study">Study</option>
+      <option value="personal">Personal</option>
+    </select>
+
+    <select id="priority-filter">
+      <option value="all">All Priorities</option>
+      <option value="high">High</option>
+      <option value="medium">Medium</option>
+      <option value="low">Low</option>
+    </select>
+
+    <button class="add-task" id="go-to-add-task">+ Add Task</button>
+  </section>
+
+  <!-- Секция с реальными задачами -->
+  <section class="task-list" id="dashboard-task-container">
+    <!-- Здесь динамически будут добавляться карточки задач -->
+  </section>
+
+  <footer class="footer">
+    <p>&copy; 2025 To-Do App</p>
+  </footer>
+  <script src="js/dashboard.js"></script>
+</body>
+</html>

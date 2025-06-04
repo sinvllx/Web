@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <link rel="stylesheet" href="css/dashboard.css">
+  <title>My Tasks | To-Do List</title>
+</head>
+<body>
+
+  <header class="dashboard-header">
+    <h1>My Tasks 📋</h1>
+    <p>Manage your tasks easily!</p>
+  </header>
+
+  <nav class="dashboard-navbar">
+    <div class="logo">My Tasks</div>
+    <ul class="dashboard-nav-links">
+      <li><a href="dashboard.html">Dashboard</a></li>
+      <li><a href="mytasks.html" class="active">My Tasks</a></li>
+      <li><a href="archive.html">Archive</a></li>
+      <li><a href="index.html" class="logout">Homepage</a></li>
+    </ul>
+  </nav>
+
+  <!-- Секция для создания новой задачи -->
+  <section class="create-task">
+    <input type="text" id="new-task-input" placeholder="Enter a new task..." />
+    
+    <select id="new-task-category">
+      <option value="work">Work</option>
+      <option value="study">Study</option>
+      <option value="personal">Personal</option>
+    </select>
+
+    <select id="new-task-priority">
+      <option value="high">High</option>
+      <option value="medium">Medium</option>
+      <option value="low">Low</option>
+    </select>
+
+    <button id="add-task-btn">+ Add Task</button>
+  </section>
+
+  <!-- Секция для отображения всех созданных задач -->
+  <section class="task-list" id="task-container">
+    <!-- Здесь появятся все задачи с возможностью отмечать Completed -->
+  </section>
+
+  <footer class="footer">
+    <p>&copy; 2025 Sabina’s To-Do App</p>
+  </footer>
+  <script src="js/mytasks.js"></script>
+</body>
+</html>
